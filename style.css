@@ -52,20 +52,23 @@ a{
 }
 
 .button-blue {
-	background-color: cornflowerblue;
+	background-color: floralwhite;
 	padding:  20px 60px;
 	border-radius: 10px;
 	display:  inline-block;
-
 }
 
 .button-blue a {
-	color:  floralwhite;
+	color:  black;
 	font-weight: bold;
 }
 
 .button-blue:hover{
-	background-color: springgreen;
+	background-color: black;
+	color: white;
+}
+
+.button-blue:hover a{
 	color: white;
 }
 
@@ -90,6 +93,20 @@ a{
 	margin-bottom: 10px;
 }
 
+.card-white-2 {
+	background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 860px;
+  text-align: center;
+  padding: 24px;
+  margin: 30px;
+  text-align: center;
+}
+
+.card-white-2 img {
+	width: 800px;
+}
 .container {
   width: 800px;
   margin: auto;
@@ -112,6 +129,12 @@ a{
 }
 
 
+
+.card-white img{
+	object-fit: cover;
+	border-radius:  4px;
+}
+
 /* Cards media queries */
 @media (max-width: 800px) {
   .cards {
@@ -121,13 +144,28 @@ a{
   .card-white {
     width: auto;
   }
+
+  .cards-2 {
+    grid-template-columns: 1fr;
+  }
+  .card-white-2 {
+    width: auto;
+  }
+.card-white img{
+	width:  auto;
+}
 }
   
+ 
+
 /* Container media queries */
 @media (min-width: 500px) {
   .container {
     width: 400px;
   }
+  .card-white-2 img {
+	width: 300px;
+}
 }
 
 
@@ -135,12 +173,20 @@ a{
   .container {
     width: 600px;
   }
+  .card-white-2 img {
+	width: 500px;
+}
+
+
 }
 
 @media (min-width: 1000px) {
   .container {
     width: 800px;
   }
+  .card-white-2 img {
+	width: 600px;
+}
 }
 
 
